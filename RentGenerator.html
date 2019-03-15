@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rent Generator</title>
+	<style type="text/css">
+		.dispnone {display: none}
+	</style>
+<link rel="stylesheet" type="text/css" href="Menu.css">
+</head>
+<body>
+ <header>
+ 	<h1>
+ 	Rent Generator
+ 	</h1>
+ </header>
+ <section id="RentForm">
+ <div class='bg-img'>
+ <div class="container">
+    <label for= "Money">Enter Amount</label>
+ 	<input type="number" id="RentMoney" name="Money">
+ 	<label for= "Tenant">Tenant Name</label>
+ 	<input type="text" id="TenantName" name="Tenant Name">
+ 	<label for= "OwnerName">Owner Name</label>
+ 	<input type="text"  id="OwnerName" name="Owner Name">
+    <label for= "start Date">Start Date</label>
+ 	<input type="date"  id="StartDate" name="Start date">
+ 	 <label for= "end Date">End Date</label>
+ 	<input type="date"  id="EndDate"name="End date">
+ 	 <label for= "pan number">PAN number</label>
+ 	<input type="text" id= "Pan"name="PAN">
+ 	<button onclick="GenerateFn()"  class ="btn">Submit</button>
+ 	</div>
+ 	</div>
+ <!-- 	<label for="Fruits">Fruits</label>
+ 	<input type="text" name="Fruits" list="Fruits">
+ 	<datalist id="Fruits">
+ 		<option value ="Grapes">
+ 		<option value="Bananas">
+ 		<option value="Apples">
+ 	</datalist> -->
+
+   <div>
+   <div class="flex-container">
+   <label for="Login"> Login </label>
+   <input type="text" name="Login">
+   <label for="Password"> Password </label>
+   <input type="text" name="Password">
+   <button  onclick="Submit()">Login</button>
+   </div>
+    </div>
+ </section>
+
+ <script type="text/javascript" src= "RentGenerator.js"></script>
+
+</body>
+</html>

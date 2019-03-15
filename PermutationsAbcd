@@ -1,0 +1,64 @@
+ABC 
+BAC 
+CBA 
+
+         A B C D   A B C D E 
+         A B D C   A C B D E      
+         A C B D   A B C E D
+ACB          A D B C
+          A D C B
+
+
+BCA
+CAB
+CBA
+
+
+// steps
+
+First pass the string in the function
+Take the i index repeatedly till the length of i , change the  string index in every position 
+and return the particular string
+check if the string is already present in the array
+Keep the first string constant and change the last string constant and mix the middle elements
+
+
+String make first string fixed and other two exchange with A
+
+
+
+function PermutationString(str){
+	var array=[];
+	var ModStr = "";
+
+	for(var i=0; i< str.length; i++){
+         var keyStr = str[i];
+         for(j = 0 ; j< str.length  ; j++ ){
+                if(j == i){
+                if(!array.includes(ModStr)){
+                  array.push(str);
+                  }
+                }
+                else{
+                     /*  var ModStr= str.split("");
+                       key = ModStr[j];
+                       var LenStr= str.indexOf(keyStr)
+                       ModStr[LenStr]= key;
+                       ModStr[j] = keyStr;
+                       ModStr= ModStr.join("");
+                       if(!array.includes(ModStr)){
+                       array.push(ModStr);
+                       PermutationString(ModStr);
+                       }
+                       */
+
+
+
+
+         }
+	}
+     console.log(array) ;
+}
+
+}
+PermutationString("ABC")

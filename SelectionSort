@@ -1,0 +1,9 @@
+function SortedArray(){
+	
+
+}
+
+find the process first
+create a minvar and place array[0]
+create other j index which is increment to i index
+loop over from i to array length
